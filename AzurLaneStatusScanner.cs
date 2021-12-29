@@ -67,6 +67,8 @@ public class AzurLaneStatusScanner
                     {
                         Console.WriteLine($"{server.name}: Status [{server.state}]");
                     }
+
+                    _oldStatusList = _newStatusList;
                 }
             }
             catch (Exception e)
